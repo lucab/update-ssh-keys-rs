@@ -13,7 +13,7 @@
 #[macro_use]
 extern crate error_chain;
 extern crate fs2;
-extern crate ssh_keys;
+extern crate openssh_keys;
 extern crate users;
 
 #[allow(unused_doc_comment)]
@@ -38,7 +38,7 @@ pub mod errors {
 use errors::*;
 use users::{User, switch};
 use users::os::unix::UserExt;
-use ssh_keys::PublicKey;
+use openssh_keys::PublicKey;
 use std::fs::{File, self};
 use fs2::FileExt;
 use std::path::{Path, PathBuf};
